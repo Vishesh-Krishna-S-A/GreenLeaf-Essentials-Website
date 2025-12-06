@@ -1,1 +1,68 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #e8f5e9;
+}
+
+section {
+  margin: 0 0 4rem 0;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero {
+  padding-top: 8rem;
+  height: 80vh;
+  background-image: url(assets/images/web.jpg);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.hero__content {
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 25%;
+}
+.hero__title {
+  font-size: 4.89rem;
+  margin-bottom: 1.7rem;
+}
+.hero__subtitle {
+  font-size: 2.89rem;
+  margin-bottom: 3.7rem;
+}
+.hero a {
+  font-size: 1.3rem;
+}
+
+.features .container {
+  margin: 0 2rem;
+}
+.features__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+}
+.features__item {
+  text-align: center;
+}
+.features__item img {
+  width: 100%;
+  height: 21.875rem;
+  margin-bottom: 2rem;
+}
+.features__item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.features__item p {
+  font-size: 1.2rem;
+  font-weight: 100;
+}/*# sourceMappingURL=style.css.map */
