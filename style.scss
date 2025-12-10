@@ -1,20 +1,58 @@
+// * Variables
+$primary-color: #66b266;
+$bg-color: #e8f5e9;
+$text-color: #595959;
+$white: #ffffff;
+$font-stack: "Open Sans";
+
+// * Mixins
+@mixin h2-style($color: #000000, $font-size: 2rem, $margin: 0 0 1.5rem 0) {
+	color: $color;
+	font-size: $font-size;
+	margin: $margin;
+}
+
+@mixin text-style {
+	color: $text-color;
+	font: {
+		size: 1.6rem;
+		weight: 100;
+	}
+}
+
+@mixin flex-center {
+	display: flex;
+	justify-self: center;
+	align-self: center;
+}
+
+@mixin box-shadow($color: #000000) {
+	box-shadow: -1px -1px -1px $color;
+	border-radius: 5px 0 0 5px;
+}
+
 // * General
 * {
 	margin: 0;
 	padding: 0;
+	font-family: $font-stack;
 }
 
 body {
-	background-color: #e8f5e9;
+	background-color: $bg-color;
 }
 
 section {
-	margin: 0 0 4rem 0;
+	margin: 0 0 3rem 0;
 }
 
 h2 {
-	font-size: 2rem;
-	margin-bottom: 1.5rem;
+	@include h2-style;
+}
+
+.container {
+	margin: 0 2rem;
+	padding: 4rem 0;
 }
 
 // * hero
@@ -32,7 +70,7 @@ h2 {
 		color: white;
 		text-align: center;
 		position: relative;
-		top: 25%;
+		top: 20vh;
 	}
 
 	&__title {
@@ -52,8 +90,8 @@ h2 {
 
 // * features
 .features {
-	.container {
-		margin: 0 2rem;
+	h2 {
+		@include h2-style;
 	}
 
 	&__grid {
@@ -66,20 +104,51 @@ h2 {
 		text-align: center;
 		img {
 			width: 100%;
-			height: 21.875rem;
+			height: 35vh;
 			margin-bottom: 2rem;
 		}
 
 		h3 {
-			font-size: 1.5rem;
+			font-size: 1.8rem;
 			margin-bottom: 1rem;
 		}
 
 		p {
-			font: {
-				size: 1.2rem;
-				weight: 100;
-			}
+			@include text-style;
+		}
+	}
+}
+
+// * cta
+.cta {
+	h2 {
+		@include h2-style($primary-color, 2.3rem);
+		@include flex-center;
+	}
+
+	p {
+		@include text-style;
+		@include flex-center;
+		margin-bottom: 3rem;
+	}
+
+	&__form {
+		@include flex-center;
+		input {
+			@include box-shadow;
+			height: 5.5vh;
+			width: 33vw;
+			font-size: 1.2rem;
+			padding: 0.1rem 1.2rem;
+		}
+		button {
+			width: 10vw;
+			font-size: 1.2rem;
+			color: $white;
+			background-color: $primary-color;
+			border: none;
+			border-radius: 0 5px 5px 0;
+			padding: 1rem;
 		}
 	}
 }
