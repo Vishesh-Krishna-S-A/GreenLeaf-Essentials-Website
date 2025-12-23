@@ -5,22 +5,22 @@
 	margin: $margin;
 }
 
-@mixin text-style {
+@mixin text-style($text-size: $i-text-size) {
 	color: $text-color;
 	font: {
-		size: 1.6rem;
+		size: $text-size;
 		weight: 100;
 	}
 }
 
-@mixin flex-center {
+@mixin flex-center($x-axis: center, $y-axis: center) {
 	display: flex;
-	justify-self: center;
-	align-self: center;
+	justify-content: $x-axis;
+	align-items: $y-axis;
 }
 
-@mixin box-shadow($color: #000000) {
-	box-shadow: -1px -1px -1px $color;
+@mixin box-shadow($x: -1px, $y: -1px, $blur: -1px, $color: #000000) {
+	box-shadow: $x $y $blur $color;
 	border-radius: 5px 0 0 5px;
 }
 
