@@ -1,4 +1,3 @@
-@import url();
 * {
   margin: 0;
   padding: 0;
@@ -24,8 +23,44 @@ h2 {
   padding: 4rem 0;
 }
 
+.header {
+  background-color: #ffffff;
+  box-shadow: 0 5px 5px #000000;
+  border-radius: 5px 0 0 5px;
+  border-radius: 0;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem;
+  height: 5vh;
+}
+.header__logo {
+  color: #66b266;
+  font-weight: bold;
+  font-size: 2.6rem;
+}
+.header__nav {
+  width: 30%;
+}
+.header__nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.header__nav a {
+  color: #595959;
+  font-size: 1.4rem;
+  font-weight: 100;
+  text-decoration: none;
+}
+.header__nav a:hover {
+  color: #66b266;
+}
+
 .hero {
-  padding-top: 8rem;
+  padding-top: 6rem;
   height: 80vh;
   background-image: url(assets/images/web.jpg);
   background-position: center;
@@ -83,22 +118,22 @@ h2 {
   font-size: 2.3rem;
   margin: 0 0 1.5rem 0;
   display: flex;
-  justify-self: center;
-  align-self: center;
+  justify-content: center;
+  align-items: center;
 }
 .cta p {
   color: #595959;
   font-size: 1.6rem;
   font-weight: 100;
   display: flex;
-  justify-self: center;
-  align-self: center;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 3rem;
 }
 .cta__form {
   display: flex;
-  justify-self: center;
-  align-self: center;
+  justify-content: center;
+  align-items: center;
 }
 .cta__form input {
   box-shadow: -1px -1px -1px #000000;
