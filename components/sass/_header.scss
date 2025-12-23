@@ -1,0 +1,38 @@
+.header {
+	background-color: $white;
+	@include box-shadow(0, 5px, 5px);
+    border-radius: 0;
+
+	&__container {
+		@include flex-center(space-between);
+		padding: 1.4rem;
+        height: 5vh;
+	}
+
+	&__logo {
+		color: $primary-color;
+		font: {
+			weight: bold;
+			size: $i-text-size + 1rem;
+		}
+	}
+
+	&__nav {
+		width: 30%;
+
+		ul {
+			list-style: none;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		a {
+			@include text-style($i-text-size - 0.2rem);
+			text-decoration: none;
+
+			&:hover {
+				color: $primary-color;
+			}
+		}
+	}
+}
