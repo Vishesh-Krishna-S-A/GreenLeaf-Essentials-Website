@@ -1,6 +1,14 @@
-// * Variables
+// * Importing Operators
+@use "sass:math";
+
+// * color
 $primary-color: #66b266;
 $bg-color: #e8f5e9;
 $text-color: #595959;
 $white: #ffffff;
+
+// * font family
 $font-stack: "Open Sans";
+
+// * font size
+$i-text-size: 1.6rem;
