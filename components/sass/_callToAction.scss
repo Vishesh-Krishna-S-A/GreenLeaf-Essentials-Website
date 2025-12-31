@@ -1,5 +1,7 @@
 // * cta
 .cta {
+	padding: $white-container-p;
+
 	h2 {
 		@include h2-style($primary-color, 2.3rem);
 		@include flex-center;
