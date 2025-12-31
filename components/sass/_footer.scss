@@ -1,0 +1,23 @@
+.footer {
+	background-color: $text-color;
+	color: $white;
+	// height: 10vh;
+
+	&__info {
+		text-align: center;
+	}
+
+	&__company {
+		@include h2-style($white, 1.3rem, 0 0 1.5rem 0);
+		font-weight: 800;
+	}
+
+	&__address {
+		@include h2-style($white, 1.4rem, 0 0 1.5rem 0);
+	}
+
+	&__copyright {
+		@include h2-style($white, 1.22rem, 0);
+		color: #c6c6c6;
+	}
+}
