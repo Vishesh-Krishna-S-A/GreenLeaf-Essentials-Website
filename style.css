@@ -196,6 +196,7 @@ h2 {
   width: 33vw;
   font-size: 1.2rem;
   padding: 0.1rem 1.2rem;
+  border: 2px solid #666666;
 }
 .cta__form button {
   width: 10vw;
@@ -205,6 +206,10 @@ h2 {
   border: none;
   border-radius: 0 5px 5px 0;
   padding: 1rem;
+  transition: background-color 0.3s ease;
+}
+.cta__form button:hover {
+  background-color: rgb(59.5913043478, 118.4086956522, 59.5913043478);
 }
 
 .footer {
@@ -230,4 +235,44 @@ h2 {
   font-size: 1.22rem;
   margin: 0;
   color: #c6c6c6;
+}
+
+.m-1 {
+  margin: 0.25rem;
+}
+
+.p-1 {
+  padding: 0.25rem;
+}
+
+.m-2 {
+  margin: 0.5rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.m-3 {
+  margin: 0.75rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
+.m-4 {
+  margin: 1rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.m-5 {
+  margin: 1.25rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
 }/*# sourceMappingURL=style.css.map */
