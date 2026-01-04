@@ -1,0 +1,11 @@
+@use "sass:color";
+
+@function light($color) {
+	$lightColor: lighten($color, 40%);
+	@return $lightColor;
+}
+
+@function dark($color) {
+	$darkColor: darken($color, 20%);
+	@return $darkColor;
+}
