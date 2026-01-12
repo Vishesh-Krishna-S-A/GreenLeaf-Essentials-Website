@@ -1,11 +1,8 @@
-@for $i from 1 through 5 {
-	// margin
-	.m-#{$i} {
-		margin: 0.25rem * $i;
+@each $colName, $color in $theme-colors {
+	.bg-#{$colName} {
+		background-color: #{$color};
 	}
-
-	// padding
-	.p-#{$i} {
-		padding: 0.25rem * $i;
+	.text-#{$colName} {
+		color: #{$color};
 	}
 }
