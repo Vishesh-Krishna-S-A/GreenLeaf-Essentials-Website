@@ -7,6 +7,12 @@ $bg-color: #e8f5e9;
 $text-color: #333333;
 $white: #ffffff;
 
+$theme-colors: (
+	"primary": $primary-color,
+	"secondary": $bg-color,
+	"tertiary": $text-color,
+);
+
 // * font family
 $font-stack: "Open Sans";
 
