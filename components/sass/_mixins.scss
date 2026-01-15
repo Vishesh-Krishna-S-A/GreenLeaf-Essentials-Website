@@ -1,0 +1,55 @@
+@mixin h2-style($color: #000000, $font-size: 2rem, $margin: 0 0 1.5rem 0) {
+	color: $color;
+	font-size: $font-size;
+	margin: $margin;
+}
+
+@mixin text-style($text-size: $i-text-size) {
+	color: $text-color;
+	font: {
+		size: $text-size;
+		weight: 100;
+	}
+}
+
+@mixin flex-center($x-axis: center, $y-axis: center) {
+	display: flex;
+	justify-content: $x-axis;
+	align-items: $y-axis;
+}
+
+@mixin box-shadow($x: -1px, $y: -1px, $blur: -1px, $color: #000000) {
+	box-shadow: $x $y $blur $color;
+	border-radius: 5px 0 0 5px;
+}
+
+@mixin button-style($type) {
+	@if $type == "primary" {
+		background-color: $primary-color;
+		color: $white;
+        border-radius: 1rem;
+        text-decoration: none;
+
+		&:hover {
+			background-color: darken($primary-color, 10%);
+		}
+	} @else if $type == "secondary" {
+		background-color: $secondary-color;
+		color: $white;
+        border-radius: 1rem;
+        text-decoration: none;
+
+		&:hover {
+			background-color: darken($secondary-color, 10%);
+		}
+	} @else {
+		background-color: lightgray;
+		color: $text-color;
+        border-radius: 1rem;
+        text-decoration: none;
+
+		&:hover {
+			background-color: darken(lightgray, 10%);
+		}
+	}
+}
