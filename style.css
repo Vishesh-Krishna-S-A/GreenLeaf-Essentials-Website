@@ -19,6 +19,36 @@ h2 {
   padding: 4rem 0;
 }
 
+.btn-primary {
+  background-color: #66b266;
+  color: #ffffff;
+  border-radius: 1rem;
+  text-decoration: none;
+}
+.btn-primary:hover {
+  background-color: rgb(76.6652173913, 152.3347826087, 76.6652173913);
+}
+
+.btn-secondary {
+  background-color: #0096FF;
+  color: #ffffff;
+  border-radius: 1rem;
+  text-decoration: none;
+}
+.btn-secondary:hover {
+  background-color: #0078cc;
+}
+
+.btn-tertiary {
+  background-color: lightgray;
+  color: #333333;
+  border-radius: 1rem;
+  text-decoration: none;
+}
+.btn-tertiary:hover {
+  background-color: rgb(185.5, 185.5, 185.5);
+}
+
 .header {
   background-color: #ffffff;
   box-shadow: 0 5px 5px #000000;
